@@ -161,17 +161,15 @@ body {
     background-color: #000;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    position: relative;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    display: flex;
+    justify-content: center;
 }
 
 .auto-video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
     outline: none;
 }
 
